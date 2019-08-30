@@ -1,0 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    27                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ibotnaru <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/26 01:37:53 by ibotnaru          #+#    #+#              #
+#    Updated: 2019/08/26 02:07:16 by ibotnaru         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#Get the real-time logs of one the tasks of the engineering-bay service.
+
+#We have 2 tasks from ex26.
+#This command shows both tasks: "docker service logs -f engineering-bay",
+#but we need to check a log  of just one of them
+
+docker service logs -f $(docker service ps -q engineering-bay|head -n1)
+
+#head -n1 - shows just  one of two
+#https://docs.docker.com/engine/reference/commandline/service_logs/

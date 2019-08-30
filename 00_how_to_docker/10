@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    10                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ibotnaru <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/21 16:15:38 by ibotnaru          #+#    #+#              #
+#    Updated: 2019/08/21 16:18:55 by ibotnaru         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#Create a volume named hatchery.
+
+docker volume create  hatchery
+
+#https://docs.docker.com/engine/reference/commandline/volume_create

@@ -1,0 +1,42 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    19                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ibotnaru <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/25 19:40:10 by ibotnaru          #+#    #+#              #
+#    Updated: 2019/08/26 00:00:12 by ibotnaru         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#Launch a container name Abathur. It will be a Python container, 2-slim version,
+#its /root folder will be bound to a HOME folder on your host, and its 3000 port
+#will be bound to the 3000 port of your virtual machine.
+#You will personalize this container so that you can use the Flask micro-framework
+#in its latest version. You will make sure that an html page displaying "Hello World"
+#with <h1> tags can be served by Flask. You will test that your container is
+#properly set up by accessing, via curl or a web browser, the IP address of your
+#virtual machine on the 3000 port.
+#You will also list all the necessary commands in your repository.
+
+#I alredy have a Python image on the computer
+#Just name the container as Abathur
+
+docker run --name Abathur -p 3000:3000 -v ~/:/root python:2-slim
+docker exec Abathur pip install Flask
+#if above doest work then remove the container by "docker rm Abathur"
+#and then use -it -d to the first command "docker run -it -d --name Abathur -p 3000:3000 -v ~/:/root python:2-slim"
+
+#exec - Run a command in a running container Abathur
+#we are inside of the Abathur cnontainer and we need to install Flask by using command pip install
+
+#by using next command we create a file hello.py by using "echo 'here_shuld_be_python_the_code_inside_of_the_file' > file_name.py"
+echo 'from flask import Flask\napp = Flask(__name__)\n@app.route(/)\ndef my_method():\n\treturn"<h1>Hello World</h1>"' > ~/hello.py
+
+#to change the host get the ip by using "docker inspect -f "{{.NetworkSettings.IPAddress}}" Abathur"
+#to run the Flask and the Abathour container with hello.py file:
+#172.17.0.3 its gonna be the ip
+docker exec -e FLASK_APP=/root/hello.py Abathur flask run --host=172.17.0.3 -p 3000
+
+#check how it works by typing "ip + :3000" as url in browser

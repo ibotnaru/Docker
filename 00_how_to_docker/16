@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    16                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ibotnaru <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/25 19:30:28 by ibotnaru          #+#    #+#              #
+#    Updated: 2019/08/25 19:36:29 by ibotnaru         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#Look up the spawning-pool container’s logs in real time without running its shell
+
+docker logs -f spawning-pool
+
+#https://success.docker.com/article/view-realtime-container-logging
+#control+C exit from real time mode

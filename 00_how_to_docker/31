@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    31                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ibotnaru <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/26 02:57:52 by ibotnaru          #+#    #+#              #
+#    Updated: 2019/08/26 03:02:38 by ibotnaru         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#Force quit and delete all the services on the local swarm, in one command.
+
+#docker service ls - see all services or specify all the services
+
+docker service rm $(docker service ls)

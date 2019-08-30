@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    25                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ibotnaru <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/26 01:20:09 by ibotnaru          #+#    #+#              #
+#    Updated: 2019/08/26 01:21:45 by ibotnaru         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#List all the services of the local swarm.
+
+docker service ls
+
+#https://docs.docker.com/engine/reference/commandline/service_ps

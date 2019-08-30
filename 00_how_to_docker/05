@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    05                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ibotnaru <ibotnaru@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/10 02:05:11 by ibotnaru          #+#    #+#              #
+#    Updated: 2019/08/10 02:05:53 by ibotnaru         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Launch the hello-world container, and make sure that it prints its welcome mes-
+sage, then leaves it.
+
+docker run hello-world
+
+# this runs the image from our machine

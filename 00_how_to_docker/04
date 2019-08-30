@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ibotnaru <ibotnaru@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/10 02:02:41 by ibotnaru          #+#    #+#              #
+#    Updated: 2019/08/10 02:04:09 by ibotnaru         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Get the hello-world container from the Docker Hub, where it’s available.
+
+docker pull hello-world
+
+# this pull the image to our machine

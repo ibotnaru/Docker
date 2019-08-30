@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    23                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ibotnaru <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/26 00:58:52 by ibotnaru          #+#    #+#              #
+#    Updated: 2019/08/26 01:01:29 by ibotnaru         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#Create an overlay-type internal network that you will name overmind.
+
+docker network create -d overlay overmind
+
+#https://docs.docker.com/engine/reference/commandline/network_create/

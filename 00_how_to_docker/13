@@ -1,0 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    13                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ibotnaru <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/25 18:55:31 by ibotnaru          #+#    #+#              #
+#    Updated: 2019/08/25 19:01:35 by ibotnaru         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#Print the environment variables of the spawning-pool container in one command,
+#to be sure that you have configured your container properly.
+
+docker inspect -f "{{.Config.Env}}" spawning-pool
+
+#docker inspect -f - get info while unsure if the container is running
+#https://stackoverflow.com/questions/34051747/get-environment-variable-from-docker-container
