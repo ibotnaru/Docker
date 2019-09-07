@@ -6,9 +6,15 @@
 #    By: ibotnaru <ibotnaru@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/10 01:31:13 by ibotnaru          #+#    #+#              #
-#    Updated: 2019/08/10 01:33:01 by ibotnaru         ###   ########.fr        #
+#    Updated: 2019/09/06 23:00:59 by ibotnaru         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+#Before starting install docker-machine and run docker on your computer:
+#brew install docker-machine
+#docker-machine create docker
+#docher-machine start docker
+
 
 # Create a virtual machine with docker-machine using the virtualbox driver, and named Char.
  
